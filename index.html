@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Ezequiel">
     <title>Ezequiel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, user-scalable=no">
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/dist/css/theme-elements.css">
     <link rel="stylesheet" href="assets/dist/css/default.css">
@@ -69,9 +69,9 @@
     <div class="body"
         style="background-image: url('assets/resources/img/background.jpeg');background-size: cover;background-repeat: no-repeat;background-attachment: fixed;background-position: center;min-height: 100vh">
 
-        <div role="main" class="main">
+        <div role="main " class="main">
 
-            <div class="container col-sm-12 col-md-8 col-lg-3 p-3">
+            <div class="container col-8 col-md-8 col-lg-3 p-3" style="height: 100vh">
 
                 <div class="py-3" style="background-color: rgba(0, 0, 0, 0.3)">
 
@@ -80,12 +80,7 @@
                             class="appear-animation animated rubberBand appear-animation-visible"
                             data-appear-animation="rubberBand" data-appear-animation-delay="0"
                             data-appear-animation-duration="1s" style="animation-duration: 1s; animation-delay: 0ms;"
-                            alt="Freefire" width="300px">
-                    </div>
-
-                    <div class="row justify-content-center">
-
-
+                            alt="Freefire" width="200px">
                     </div>
 
                     <div class="row justify-content-center sticky-top">
@@ -95,8 +90,8 @@
                                     style="background-color: rgba(0, 0, 0, 0.6); border: none">
                                     <img src="assets/resources/img/icon-user.png" width="32px" alt="">
                                 </span>
-                                <input class="form-control text-1 text-white" id="insert-your-id" type="text"
-                                    style="background-color: rgba(0, 0, 0, 0.6);" placeholder="Ingrese su ID" required>
+                                <input class="form-control text-1 text-white" id="insert-your-id" type="number"
+                                    style="background-color: rgba(0, 0, 0, 0.6);" placeholder="Ingrese ID" required>
                             </div>
 
                             <div class="input-group mb-3">
@@ -104,8 +99,8 @@
                                     style="background-color: rgba(0, 0, 0, 0.6); border: none">
                                     <img src="assets/resources/img/diamond.png" width="32px" alt="">
                                 </span>
-                                <input class="form-control text-1 text-white" id="diamonds" type="text"
-                                    style="background-color: rgba(0, 0, 0, 0.6);" placeholder="Cantidad de diamantes"
+                                <input class="form-control text-1 text-white" id="diamonds" type="number"
+                                    style="background-color: rgba(0, 0, 0, 0.6);" placeholder="Diamantes"
                                     required>
                             </div>
                         </div>
@@ -123,7 +118,7 @@
                     </div>
 
                     <div class="text-center">
-                        <img src="assets/resources/img/image.png" width="400px" alt="">
+                        <img id="image-in-body" src="assets/resources/img/image.png" width="200px" alt="">
                     </div>
 
                     <h4 id="text-footer" class="text-center mt-1" style="color: #000">
